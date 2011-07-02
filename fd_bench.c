@@ -86,7 +86,7 @@ int main (int argc, char const *argv[])
     return 0;
 
 error:
-    if (data != NULL)
+    if (data != NULL && data != MAP_FAILED)
         munmap(data, DATA_LEN);
     
     if (fd >= 0)
