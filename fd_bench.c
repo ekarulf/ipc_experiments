@@ -8,6 +8,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+#include "string_compat.h"
+
 #define PATH_LEN 1024
 #define DATA_LEN 2048
 
