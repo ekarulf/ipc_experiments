@@ -1,0 +1,6 @@
+nu$ clang fd_bench.c -o fd_bench -DUSE_SHM
+nu$ time ./fd_bench /tmp/bench.XXXX 10000
+./fd_bench /tmp/bench.XXXX 10000  0.01s user 0.07s system 97% cpu 0.089 total
+nu$ clang fd_bench.c -o fd_bench
+nu$ time ./fd_bench /tmp/bench.XXXX 10000
+./fd_bench /tmp/bench.XXXX 10000  0.03s user 1.72s system 92% cpu 1.894 total
