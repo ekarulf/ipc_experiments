@@ -75,6 +75,7 @@ int main (int argc, char const *argv[])
             perror("Error unmapping virtual memory");
             goto error;
         }
+        data = NULL;
         
         if (close(fd) == -1)
         {
